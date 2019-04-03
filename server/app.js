@@ -1,8 +1,8 @@
 const express = require('express');
 const session = require('express-session');
-const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
+const flash = require('connect-flash');
 
  console.log('done fetching the petrol from the tank')
 const app = express();
@@ -12,7 +12,6 @@ const app = express();
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cookieParser());
 app.use(cors())
 
 console.log("middleware set")
@@ -25,7 +24,8 @@ app.use(
   })
 );
 
-
+// Connect flash
+app.use(flash());
 console.log("session set")
 
 
