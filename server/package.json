@@ -1,17 +1,12 @@
 {
-  "name": "server",
+  "name": "backoftheinvent",
   "version": "1.0.0",
-  "description": "the back end of my login app",
-  "main": "server.js",
+  "description": "its the backend",
+  "main": "app.js",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "patel tanaka",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.18.3",
-    "express": "^4.16.4",
-    "mongoose": "^5.4.21"
-  }
+  "license": "ISC"
 }
